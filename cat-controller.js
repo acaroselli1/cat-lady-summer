@@ -1,16 +1,20 @@
+console.log("HERE WE GO", 2)
 // IS THE CODE THAT TALKS TO THE VIEW
 
 function CatController() {
-
+  console.log("HERE WE GO", 4)
   // PRIVATE PARTS
   var catService = new CatService()
+  console.log("HERE WE GO", 7)
   // var x = {favNum:7}
 
   function draw() {
+    console.log("HERE WE GO", 8)
     //draw all my cats to the screen in a given html format
     var cats = catService.getCats()
     var template = ''
     for (var i = 0; i < cats.length; i++) {
+      console.log("HERE WE GO", "DRAWING CAT NUMBER", i)
       var cat = cats[i];
       //check number of pets, to determine status
       var statusIndex = 0
@@ -43,5 +47,6 @@ function CatController() {
     draw()
   }
   draw()
+  console.log("HERE WE GO", 10)
 }
 

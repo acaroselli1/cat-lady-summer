@@ -1,7 +1,8 @@
+console.log("HERE WE GO", 1)
 // THE CODE THAT MAINTAINS DATA INTEGRITY
 
 function CatService() {
-
+  console.log("HERE WE GO", 5)
   // PRIVATE PARTS
   var id = 1
   function Cat(name, picture) {
@@ -48,9 +49,14 @@ function CatService() {
     }
   }
 
+
+
   this.getCats = function getCats(){
+    console.log("HERE WE GO", 9)
     var catLadyCopy = JSON.parse(JSON.stringify(catLady))
     return catLadyCopy.cats
   }
+
+  console.log("HERE WE GO", 6)
 
 }
